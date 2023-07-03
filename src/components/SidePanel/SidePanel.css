@@ -1,0 +1,113 @@
+.sidepanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.sidepanel__btn-container {
+    display: flex;
+    justify-content: end;
+    padding: 14px 14px 0 0;
+    margin: 0 0 100px;
+}
+
+.sidepanel__btn-close {
+    border: none;
+    background: url('../../images/burger-close-icon.svg') center/cover no-repeat;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: opacity .5s ease;
+}
+
+.sidepanel__btn-close:hover {
+    opacity: .7;
+}
+
+
+.sidepanel__container {
+    height: calc(100% - 190px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidepanel__routes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidepanel__route {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+    margin: 0 0 24px;
+    cursor: pointer;
+    transition: .5s opacity ease;
+}
+
+.sidepanel__route:hover {
+    opacity: .7;
+}
+
+.sidepanel__route_type_active {
+    border-bottom: 2px solid #000000;
+    padding: 0 0 7px;
+    margin: 0 0 15px;
+}
+
+.sidepanel__route:last-of-type {
+    margin: 0;
+}
+
+.sidepanel__btn-open {
+    border: none;
+    background: url("../../images/burger-icon.svg") center/cover no-repeat;
+    width: 40px;
+    height: 43px;
+}
+
+.sidepanel__account {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 321px) {
+    .sidepanel::before {
+        content: '';
+        width: calc(100% - 320px);
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .3)
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sidepanel {
+        width: 520px;
+    }
+
+    .sidepanel::before {
+        width: calc(100% - 520px);
+    }
+
+    .sidepanel__container {
+        height: calc(100% - 249px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .sidepanel__btn-container {
+        margin: 0 0 105px;
+        padding: 23px 23px 0 0;
+    }
+}

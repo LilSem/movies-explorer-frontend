@@ -1,0 +1,115 @@
+.about-me {
+    margin: 70px 0;
+}
+
+.about-me__title {
+    margin: 0 0 28px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.about-me__line {
+    color: #000000;
+    margin: 0 0 60px;
+}
+
+.about-me__container {
+    margin: 0 0 70px;
+}
+
+.about-me__avatar {
+    width: 292px;
+    height: 352px;
+    margin: 0 0 40px;
+}
+
+.about-me__name {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 20px;
+}
+
+.about-me__information {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0 0 20px;
+}
+
+.about-me__information-desc {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0 0 40px;
+}
+
+.about-me__github-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me {
+        margin: 90px 50px;
+    }
+
+    .about-me__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .about-me__name {
+        margin: 0 0 16px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .about-me__avatar {
+        margin: 0;
+        max-width: 255px;
+        max-height: 307px;
+    }
+
+    .about-me__information {
+        margin: 0 0 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .about-me__information-desc {
+        max-width: 364px;
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0 0 88px;
+    }
+
+    .about-me__github-link {
+        margin: 0;
+        font-size: 14px;
+        line-height: 17px;
+        transition: .5s opacity ease;
+        cursor: pointer;
+    }
+
+    .about-me__github-link:hover {
+        opacity: .7;
+    }
+
+    .description-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-me {
+        margin: 90px 70px 100px;
+    }
+}

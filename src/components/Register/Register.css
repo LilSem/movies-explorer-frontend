@@ -1,0 +1,138 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 296px;
+    margin: 56px auto 30px;
+    height: calc(100vh - 86px);
+}
+
+.register__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 50px 0 80px;
+}
+
+.register-form {
+    width: 100%;
+}
+
+.register-form__input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+    min-height: 63px;
+    max-height: 90px;
+}
+
+.register-form__label {
+    color: #a0a0a0;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0 0 5px;
+}
+
+.register-form__input {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    outline: 0;
+    padding: 0 0 10px;
+    margin: 0 0 6px;
+}
+
+.register-form__input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.register-form__input-error {
+    overflow: hidden;
+    color: #ee3465;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0 0 6px;
+}
+
+.register-form__input-error_type_api {
+    font-size: 11px;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+.register-form__input:focus {
+    border-bottom: 1px solid #2be080;
+}
+
+.register-form__action {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 30px;
+}
+
+.register-form___link-container {
+    display: flex;
+    gap: 7px;
+    margin: 14px 0 0;
+}
+
+.register-form___text-link {
+    color: #a0a0a0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.register-form__link {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #2be080;
+    transition: opacity .5s ease;
+}
+
+.register-form__link:hover {
+ opacity: .7;
+}
+
+
+@media screen and (min-width: 768px) {
+    .register {
+        align-items: start;
+        margin: 232px auto;
+        max-width: 396px;
+        height: calc(100vh - 464px);
+    }
+
+    .register__title {
+        margin: 40px 0;
+    }
+
+    .register-form__input-container {
+        margin: 0;
+    }
+
+    .register-form__action {
+        bottom: 232px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .register {
+        margin: 70px auto;
+        height: calc(100vh - 140px);
+    }
+
+    .register__title {
+        margin: 50px 0;
+    }
+
+    .register-form__action {
+        bottom: 70px;
+    }
+}

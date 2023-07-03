@@ -1,0 +1,84 @@
+.movie-card {
+    width: 300px;
+    height: 235px;
+    list-style-type: none;
+    background: #fdfdfd;
+}
+
+.movie-card__image {
+    width: 100%;
+}
+
+.movie-card__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 14px 12px;
+}
+
+.movie-card__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.movie-card__name {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.movie-card__duration {
+    font-size: 11px;
+    color: #a0a0a0;
+    margin: 0;
+}
+
+.movie-card__btn-like {
+    width: 16px;
+    height: 16px;
+    background: url('../../images/like-unactive-btn.svg') center/cover no-repeat;
+    background-size: 16px 16px;
+    border: none;
+    padding: 0;
+    transition: opacity .7s ease;
+    cursor: pointer;
+}
+
+.movie-card__btn-like:hover {
+    opacity: .7;
+}
+
+.movie-card__btn-like_type_active {
+    background: url('../../images/like-btn.svg') center/cover no-repeat;
+}
+
+.movie-card__btn-remove {
+    width: 16px;
+    height: 16px;
+    background: url('../../images/dislike-btn.svg') center/cover no-repeat;
+    background-size: 16px 16px;
+    border: none;
+    padding: 0;
+    transition: opacity .7s ease;
+    cursor: pointer;
+}
+
+.movie-card__btn-remove:hover {
+    opacity: .7;
+}
+
+@media screen and (min-width: 768px) {
+    .movie-card {
+        width: 339px;
+        height: 257px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .movie-card {
+        width: 270px;
+        height: 218px;
+    }
+}
