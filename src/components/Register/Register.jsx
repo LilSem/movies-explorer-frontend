@@ -60,19 +60,18 @@ function Register() {
                     />
                     <span className={`register-form__input-error`}>{errors.password}</span>
                 </div>
+
                 <div className="register-form__action">
                  <span className="register-form__input-error register-form__input-error_type_api">
                     При обновлении профиля произошла ошибка.
                   </span>
                     <FormSubmitBtn textBtn='Зарегистрироваться'/>
-
-                    <div className="register-form___link-container">
-                        <span className="register-form___text-link">Уже зарегистрированы? </span>
-                        <Link to="/signin" className="register-form__link">
+                    <div className="register-form__action-links">
+                        <span className="register-form__action-text">Уже зарегистрированы? </span>
+                        <Link to="/signin" className="register-form__action-link">
                             Войти
                         </Link>
                     </div>
-
                 </div>
             </form>
         </section>

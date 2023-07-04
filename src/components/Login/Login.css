@@ -76,19 +76,19 @@
     bottom: 30px;
 }
 
-.login-form___link-container {
+.login-form__action-links {
     display: flex;
     gap: 7px;
     margin: 14px 0 0;
 }
 
-.login-form___text-link {
+.login-form__action-text {
     color: #a0a0a0;
     font-size: 12px;
     font-weight: 400;
 }
 
-.login-form__link {
+.login-form__action-link {
     font-size: 12px;
     font-weight: 400;
     text-decoration: none;
@@ -96,7 +96,7 @@
     transition: opacity .5s ease;
 }
 
-.login-form__link:hover {
+.login-form__action-link:hover {
     opacity: .7;
 }
 

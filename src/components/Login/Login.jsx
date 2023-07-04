@@ -49,10 +49,9 @@ function Login (){
                     error example
                   </span>
                     <FormSubmitBtn textBtn='Войти'/>
-
-                    <div className="login-form___link-container">
-                        <span className="login-form___text-link">Ещё не зарегистрированы?</span>
-                        <Link to="/signup" className="login-form__link">
+                    <div className="login-form__action-links">
+                        <span className="login-form__action-text">Ещё не зарегистрированы?</span>
+                        <Link to="/signup" className="login-form__action-link">
                             Регистрация
                         </Link>
                     </div>

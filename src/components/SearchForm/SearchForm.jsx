@@ -6,14 +6,16 @@ const SearchForm = () => {
     return (
         <section className='search'>
             <div className='search__container'>
-                <form name='search-form' className='search__form' noValidate>
+                <form name="search__form" className='search__form'>
                     <input
                         type='text'
-                        className='search-form__input'
+                        className='search__form-input'
                         placeholder='Фильм'
+                        minLength='2'
+                        maxLength='200'
                         required
                     />
-                    <button type='submit' className='search-form__submit-btn'></button>
+                    <button type='submit' className='search__form-submit-btn'></button>
                 </form>
             </div>
             <ShortFilmFilter />

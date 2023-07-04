@@ -38,7 +38,7 @@
 .movie-card__btn-like {
     width: 16px;
     height: 16px;
-    background: url('../../images/like-unactive-btn.svg') center/cover no-repeat;
+    background: url('../../images/like-unactive-btn.svg') center/contain no-repeat;
     background-size: 16px 16px;
     border: none;
     padding: 0;
@@ -51,7 +51,7 @@
 }
 
 .movie-card__btn-like_type_active {
-    background: url('../../images/like-btn.svg') center/cover no-repeat;
+    background: url('../../images/like-btn.svg') center/contain no-repeat;
 }
 
 .movie-card__btn-remove {

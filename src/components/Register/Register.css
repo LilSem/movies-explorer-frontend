@@ -76,19 +76,19 @@
     bottom: 30px;
 }
 
-.register-form___link-container {
+.register-form__action-links {
     display: flex;
     gap: 7px;
     margin: 14px 0 0;
 }
 
-.register-form___text-link {
+.register-form__action-text {
     color: #a0a0a0;
     font-size: 12px;
     font-weight: 400;
 }
 
-.register-form__link {
+.register-form__action-link {
     font-size: 12px;
     font-weight: 400;
     text-decoration: none;
@@ -96,7 +96,7 @@
     transition: opacity .5s ease;
 }
 
-.register-form__link:hover {
+.register-form__action-link:hover {
  opacity: .7;
 }
 
