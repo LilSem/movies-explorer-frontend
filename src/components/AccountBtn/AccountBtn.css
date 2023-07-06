@@ -1,0 +1,22 @@
+.account-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    border: 2px solid rgba(170, 170, 170, .2);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+    transition: .5s opacity ease;
+    width: 100px;
+    height: 32px;
+}
+
+.account-btn:hover {
+    opacity: .7;
+}
